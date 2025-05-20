@@ -20,14 +20,21 @@
 
         .hero {
             background-color: #4A0E0E;
-            /* Dark red, placeholder for image */
-            /* background-image: url('placeholder-hero-bg.jpg'); Replace with actual image */
-            background-size: cover;
-            background-position: center;
+            /* Base dark red */
+            background-image:
+                /* Fine grid */
+                repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04) 1px, transparent 1px, transparent 15px),
+                repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04) 1px, transparent 1px, transparent 15px),
+                /* Larger, fainter diagonal schematic lines */
+                repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(255, 255, 255, 0.03) 30px, rgba(255, 255, 255, 0.03) 32px, transparent 32px, transparent 70px),
+                repeating-linear-gradient(-45deg, transparent, transparent 30px, rgba(255, 255, 255, 0.03) 30px, rgba(255, 255, 255, 0.03) 32px, transparent 32px, transparent 70px);
+            background-size: 15px 15px, 15px 15px, 70px 70px, 70px 70px;
+            /* Size for each layer */
             color: white;
             text-align: center;
             padding: 60px 20px 40px 20px;
-            /* Reduced padding */
+            position: relative;
+            /* For potential future pseudo-elements */
         }
 
         .hero h1 {
