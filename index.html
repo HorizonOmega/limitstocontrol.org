@@ -5,162 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Limits to Control Workshop 2025</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
-        rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            /* Lighter gray background */
-            color: #333;
-            line-height: 1.7;
-        }
-
-        .hero {
-            background-color: #4A0E0E;
-            /* Base dark red */
-            background-image:
-                /* Fine grid */
-                repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04) 1px, transparent 1px, transparent 15px),
-                repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04) 1px, transparent 1px, transparent 15px),
-                /* Larger, fainter diagonal schematic lines */
-                repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(255, 255, 255, 0.03) 30px, rgba(255, 255, 255, 0.03) 32px, transparent 32px, transparent 70px),
-                repeating-linear-gradient(-45deg, transparent, transparent 30px, rgba(255, 255, 255, 0.03) 30px, rgba(255, 255, 255, 0.03) 32px, transparent 32px, transparent 70px);
-            background-size: 15px 15px, 15px 15px, 70px 70px, 70px 70px;
-            /* Size for each layer */
-            color: white;
-            text-align: center;
-            padding: 40px 20px 30px 20px;
-            position: relative;
-            /* For potential future pseudo-elements */
-        }
-
-        .hero h1 {
-            font-size: 2.8em;
-            /* Reduced font size */
-            margin-bottom: 10px;
-            font-weight: 700;
-            font-family: 'Roboto Slab', serif;
-        }
-
-        .hero-underline {
-            width: 100px;
-            height: 4px;
-            background-color: #7E57C2;
-            /* More vibrant purple accent */
-            margin: 0 auto 20px auto;
-            /* Adjusted margin */
-        }
-
-        nav {
-            background-color: rgba(0, 0, 0, 0.3);
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 20px;
-            font-size: 1.05em;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover,
-        nav a:focus {
-            color: #7E57C2;
-        }
-
-        nav a.active {
-            color: #7E57C2;
-        }
-
-        .container {
-            width: 85%;
-            max-width: 850px;
-            margin: 30px auto;
-            padding: 35px;
-            background-color: white;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-            border-radius: 8px;
-        }
-
-        h2 {
-            font-family: 'Roboto Slab', serif;
-            color: #7E57C2;
-            font-size: 1.9em;
-            margin-top: 40px;
-            margin-bottom: 25px;
-            border-bottom: 2px solid #efefef;
-            padding-bottom: 12px;
-        }
-
-        h3 {
-            font-family: 'Roboto Slab', serif;
-            color: #555;
-            font-size: 1.5em;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-
-        p,
-        ul,
-        li {
-            margin-bottom: 16px;
-            font-size: 1.05em;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 25px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: #7E57C2;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover,
-        a:focus {
-            text-decoration: underline;
-            color: #5E35B1;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 50px;
-            background-color: #333;
-            color: #bbb;
-            font-size: 0.95em;
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background: #e0e0e0;
-            margin: 50px 0;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="hero">
-        <h1>Limits to Control<br>Workshop 2025</h1>
-        <div class="hero-underline"></div>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="statement.html">Statement</a>
-        </nav>
+        <h1>Limits to Control Workshop 2025</h1>
     </header>
+
+    <div class="statement-card">
+        <a href="statement.html">
+            <h2>Workshop Statement</h2>
+            <p>Read the collective statement from the 2025 Limits to Control Workshop</p>
+        </a>
+    </div>
 
     <main class="container">
         <section id="intro">
@@ -176,91 +35,46 @@
 
         <section id="about-workshop">
             <h2>About the workshop</h2>
-            <p>This in-person workshop is meant to facilitate deep collaboration. We're bringing together researchers to
-                map the territory of AI control limitations – to understand the dynamics, patterns, and impossibilities
-                of control. We are thrilled to welcome Roman Yampolskiy, Anders Sandberg, Forrest Landry, and other
-                researchers working on control limitations.</p>
-            <p>This workshop aims to:</p>
-            <ul>
-                <li>Build common knowledge among researchers on the limits to AI control.</li>
-                <li>Facilitate high-fidelity discussions through whiteboard sessions and collaborative problem-solving.
-                </li>
-                <li>Identify and clarify viable directions in control research by establishing boundaries on
-                    controllability.</li>
-                <li>Formalize and elevate this critical research topic.</li>
-            </ul>
+            <p>This in-person workshop brought together researchers to map the territory of AI control limitations – to understand the dynamics, patterns, and impossibilities of control. Through presentations, whiteboard discussions, and collaborative problem-solving, participants worked to build common knowledge, clarify viable research directions, and formalize this critical research topic.</p>
         </section>
 
         <section id="dates-location">
             <h2>Dates & location</h2>
             <ul>
                 <li>Date: Wednesday, June 11 - Friday, June 13, 2025</li>
-                <li>Location: University of Louisville, Kentucky, USA.</li>
+                <li>Location: University of Louisville, Kentucky, USA (Belknap Academic Building, rooms 427 & 428)</li>
             </ul>
-            <p>Detailed logistical information will be provided to confirmed participants.</p>
-        </section>
-
-        <section id="agenda">
-            <h2>Agenda</h2>
-            <p>We aim to strike a balance between structured sharing and messy exploration – we believe this is where
-                the best ideas tend to emerge. Over the three days, we will do:</p>
-            <ul>
-                <li>Talks: Researchers present their current work, keeping it under an hour.</li>
-                <li>Discussions: We break out into groups to discuss specific questions and bounce ideas around.</li>
-                <li>Regrouping: We come back into one room to synthesize what came out of the discussions.</li>
-                <li>Next steps: On the final day, we'll plan further development of this research agenda.</li>
-            </ul>
-        </section>
-
-        <section id="sessions">
-            <h2>Sessions</h2>
-            <p>Sessions will include:</p>
-            <ul>
-                <li>Anders Sandberg's talk on theoretical limits to control: "Do any of them actually tell us anything?"
-                </li>
-                <li>Forrest Landry's whiteboard chat on an overlooked dynamic: "Virtual machines in recursive feedback"
-                </li>
-                <li>Richard Everheart's logical framework for AI alignment, aiming to refine foundational understanding.
-                </li>
-                <li>Thibaud Veron's session on a framework and engineered toy models that illustrate control dynamics.
-                </li>
-                <li>Will Petillo's session on better communication and narrative framings for AI safety/control
-                    concepts.</li>
-            </ul>
-            <p>(More details on specific talks and activities will be added as confirmed.)</p>
         </section>
 
         <section id="proceedings">
-            <h2>Proceedings, post-workshop outputs</h2>
-            <p>This section will be updated after the workshop with summaries, key insights, and any public materials
-                generated.</p>
-            <p>Potential outputs may include:</p>
+            <h2>Proceedings</h2>
+            <p>See <a href="statement.html">workshop statement</a>.</p>
+            
+            <p>Paper publications are pending. See for now:</p>
             <ul>
-                <li>Summary report of discussions, key agreements, and open questions</li>
-                <li>Notes or photos from sessions</li>
-                <li>Links to research papers, blog posts, or pre-prints influenced by the workshop</li>
-                <li>A refined list of open research questions in the "limits to control" domain</li>
-                <li>Presentations or slide decks (if speakers consent to public sharing)</li>
+                <li>Richard Everheart's pre-print "On the Boundaries of Formal Intelligence"</li>
+                <li>Remmelt Ellen's essay "Deconfusing AI and Evolution"</li>
             </ul>
         </section>
 
-        <section id="join-us">
-            <h2>Join us</h2>
-            <p>This workshop is for researchers actively working on or deeply interested in the theoretical and
-                practical limits of AI control. Do you wish to contribute to these focused discussions? Email Orpheus at
-                <a href="mailto:o@horizonomega.org">o@horizonomega.org</a> to express your interest.
-            </p>
-            <p>Costs & funding: Participants are generally expected to cover their own travel and accommodation. We can
-                reimburse only some whose research is not yet funded. The workshop has a grant offer from Survival and
-                Flourishing Fund.</p>
-            <p>To prepare: Read work by participants you are curious to chat with. Then we share some understanding
-                already going in. Most of our time will be in collaborative discussions, so consider where you could
-                bring in specific problems or concepts.</p>
+        <section id="participants">
+            <h2>Participants</h2>
+            <p>The workshop brought together researchers actively working on the theoretical and practical limits of AI control:</p>
+            <ul>
+                <li>Prof. Roman Yampolskiy</li>
+                <li>Dr. Anders Sandberg</li>
+                <li>Thibaud Veron</li>
+                <li>Aybars Kocoglu</li>
+                <li>Forrest Landry</li>
+                <li>Richard Everheart</li>
+                <li>Remmelt Ellen</li>
+                <li>Will Petillo</li>
+            </ul>
         </section>
 
         <section id="suggested-reading">
-            <h2>Suggested reading</h2>
-            <p>Writings by participating researchers:</p>
+            <h2>Related reading</h2>
+            <p>Writings by workshop participants:</p>
 
             <h3>Papers:</h3>
             <ul>
@@ -271,8 +85,9 @@
                         target="_blank">AI: Unexplainable, Unpredictable, Uncontrollable</a>, by Roman Yampolskiy</li>
                 <li><a href="https://dl.acm.org/doi/10.1145/3603371#d1e583" target="_blank">Impossibility Results in
                         AI</a>, by Roman Yampolskiy</li>
+                <li>Richard Everheart's pre-print: "On the Boundaries of Formal Intelligence"</li>
+                <li>Remmelt Ellen's essay: "Deconfusing AI and Evolution"</li>
                 <li>[Forthcoming paper on control limits] by Anders Sandberg, Aybars Kocoglu, Thibaud Veron</li>
-                <li>[Forthcoming paper on a logical framework] by Richard Everheart</li>
             </ul>
 
             <h3>Essays:</h3>
@@ -288,15 +103,13 @@
                 <li><a href="http://mflb.com/ai_alignment_1/agi_error_correction_gld.html" target="_blank">On Error
                         Detection</a>, by Forrest Landry</li>
             </ul>
-            <p>Sorted roughly by ease of reading. To clarify an argument, do reach out to authors. Authors value
-                questions!</p>
         </section>
 
         <hr>
 
         <section id="organizing-team">
             <h2>Organizing team</h2>
-            <p>This event is hosted by <a href="https://horizonomega.org/" target="_blank">H&Omega;</a>, and organized
+            <p>This event was hosted by <a href="https://horizonomega.org/" target="_blank">H&Omega;</a>, and organized
                 by:</p>
             <ul>
                 <li>Orpheus Lummis (H&Omega;)</li>
@@ -307,13 +120,13 @@
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>For inquiries regarding the workshop, please contact Orpheus at <a
+            <p>For inquiries, please contact Orpheus at <a
                     href="mailto:o@horizonomega.org">o@horizonomega.org</a>.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Limits to Control Workshop. All rights reserved.</p>
+        <p>&copy; 2025 Limits to Control Workshop. All rights reserved.</p>
     </footer>
 
 </body>
